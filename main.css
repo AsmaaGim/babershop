@@ -1,0 +1,326 @@
+/* sélectionner n'importe quel élément peu import le type */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*display sur l'element parent*/
+.r-position { 
+  
+    position: relative;
+    right:22px;
+    top:2px; 
+
+}
+/* background image salon de coiffure */
+.image-fond{
+    background-image: url(IMG/bandeau.jpg-min.jpg);
+    height: 445px;
+    box-shadow: 0 7px 8px black inset;
+}
+.d-flex{
+    display: flex;
+}
+/* prennent toute la largeur disponible et s'affichent avec un espace avant et après  */
+.d-block{
+    display: block;
+}
+
+/* appliquer la valeur de hauteur et de largeur sur le conteneur de bloc en ligne */
+.d-inline-block{
+    display: inline-block;
+}
+
+
+/*la direction de la valeur est fixée sur une ligne ==row */
+
+.flex-row{
+    flex-direction: row;
+}
+/* Les lignes de texte sont empilées */
+
+.flex-column{
+    flex-direction: column;
+}
+
+/*justify-content les Éléments groupés au centre paraport a l'axe principale*/
+.justify-center{
+    justify-content: center;
+}
+/* même espace répartis équitablement les bords sont collée sur le conteur de la page */
+.justify-between{
+    justify-content: space-between;
+}
+/* même espace répartis équitablement avec un bord debut/fin de moitié de l'espace défini entre les elements */
+.justify-around{
+    justify-content: space-around;
+}
+/* répartis par le même espace */ 
+.justify-evenly{
+    justify-content: space-evenly;
+}
+/* les élements groupés à la fin  */
+.justify-flx-end{
+    justify-content: flex-end;
+}
+
+/*alignement vertical*/
+
+.align-center{
+    align-items: center;
+}
+/* with des images contenaire */
+.w100{
+    width: 100%;
+
+}
+
+.margin-right{
+    margin-right: 30px;
+}
+/*width*/
+/* colones images */
+.w30{
+    width: 32%;
+}
+
+/* total maquette */
+.w-90{
+    width: 90%;
+}
+
+
+/* margin et padding auto*/
+
+.m-auto{
+    margin: auto;
+}
+
+.p-auto{
+    padding: auto;
+}
+.p-5{
+    padding: 5px;
+}
+/*padding et margin horizontal et vertical auto*/
+/* gouche droite */
+.px-auto{
+    padding-left: auto;
+    padding-right: auto;
+}
+/* marge entre nav et liens du menu */
+.margin-topM{
+margin-top: 20px;
+}
+/* haut bas */
+.py-auto{
+    padding-top: auto;
+    padding-bottom: auto;
+}
+/* marge gouche droite */
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* marge exterieur haut et bas */
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/*couleur background*/
+
+.bg-blue{
+    background-color: rgb(58, 108, 155);
+}
+
+.bg-yellow{
+    background-color: rgb(248, 237, 176);
+}
+
+
+/* centrer le teste pr les deux sections présentation et nos services */
+.text-center{
+    text-align: center;
+}
+/*  pas de decoration pr les elements de la nav*/
+.text-deco-none{
+    text-decoration: none;
+}
+/* elevé le style de la list pour le footer */
+.list-style-none{
+    list-style-type: none;
+}
+/*taille logo*/
+
+.img-logo{
+    width: 150px;
+    height: auto;
+}
+
+
+/*ombre  sur les bouttons rdv et tarif*/
+
+.box-shadow-button{
+    box-shadow:0 4px 8px black ;
+}
+
+.box-shadow-nav{
+    box-shadow:1px 1px 4px grey ;
+}
+.test-deco-style-non{
+    text-decoration-style: none;
+
+}
+div.anim-menu-hover a{
+    text-transform: uppercase;
+    color:black;
+    text-decoration: none;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+
+
+/* cursors animer avec une transinion */
+
+.anim-menu-hover :hover{
+
+    color: rgb(58, 108, 155);
+    padding : 15px;
+
+}
+.ithms-menu{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6em;
+   
+
+}
+.btnrdv{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: rgb(244, 250, 255);
+    box-shadow: 0 5px 8px 5px black;
+    position: relative;
+   border: 2px;
+    
+    
+}
+/* traits des H1 et contenue du milieux */
+h1{
+    padding: 25px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+h1::after{
+    content:"";
+    position: absolute;
+    border-bottom: 2px solid black;
+    width: 45%;
+    bottom: 0.9em;
+}
+.lorem-p {
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align : center;
+    margin-top : 35px;
+    font-size: larger;
+    animation-duration: 2s;
+    animation-name: slidein;
+    padding: 20px;
+}
+h
+.Presentation {
+  
+    margin-top : 30px;
+    word-spacing : 3px;
+    line-height : 1.5em;
+}
+
+.contenaire-img{
+    margin-bottom: 60px;
+}
+
+#images {
+    margin-top : 25px;
+    padding: 10px;
+}
+
+.imageBarbier {
+  padding: 10px;
+}
+
+.Text-barbier {
+    padding : 10px;
+    font-size : 22px;
+}
+
+.Titre {
+    font-size : 30px;
+}
+.cadre {
+    border : 4px solid #B7922B;
+}
+.tarif {
+    border: none;
+    color : white;
+    width : 80px;
+    font-size : 1.2em;
+}
+.position-btn-tarif{
+    top: 1258px;
+    left: 1003px;
+    width: 366px;
+    height: 106px;
+    overflow: hidden;
+    font-family: Average;
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+}
+
+/* pour positioner le boutton tarif paraport a l'element parent div autre façon */
+.flexgrow-1{
+    flex-grow: 1;
+    }
+
+.align-self-end{
+    align-self: flex-end;
+}
+/* FOOTER */
+.img-logo{
+    width: 150px;
+    height: auto;
+}
+/* icons facebook intagram et twitter */
+.ilogofooter {
+	
+	width: 35px;
+    padding: 0 0 0 10px;
+
+}
+.colorcrght{
+    color:white;
+    font-size: medium;
+}
+/* de l'animation sur le passage des paraghraphe */
+
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+
